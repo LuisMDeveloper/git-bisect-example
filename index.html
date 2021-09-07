@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"/>
 </head>
 <body>
-<article class="prose md:prose-lg mx-auto mt-6">
+<article class="prose md:prose-lg mx-auto my-6">
     <h1>git bisect</h1>
     <h2>Name</h2>
     <p>git-bisect - Use binary search to find the commit that introduced a bug</p>
@@ -28,6 +28,11 @@
     <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> log</p>
     <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> run &lt;cmd&gt;...</p>
     <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> help</p>
+    <p>This command uses a binary search algorithm to find which commit in your project’s history introduced a bug. You
+        use it by first telling it a "bad" commit that is known to contain the bug, and a "good" commit that is known to
+        be before the bug was introduced. Then <b>git bisect</b> picks a commit between those two endpoints and asks you
+        whether the selected commit is "good" or "bad". It continues narrowing down the range until it finds the exact
+        commit that introduced the change.</p>
 </article>
 </body>
 </html>
