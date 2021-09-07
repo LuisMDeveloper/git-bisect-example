@@ -62,6 +62,10 @@
     <h3>Bisect reset</h3>
     <p>After a bisect session, to clean up the bisection state and return to the original HEAD, issue the following
         command:</p>
+    <p class="bg-gray-400 rounded py-2 px-4">$ git bisect reset</p>
+    <p>By default, this will return your tree to the commit that was checked out before git bisect start. (A new git
+        bisect start will also do that, as it cleans up the old bisection state.)
+    </p>
 </article>
 </body>
 </html>
