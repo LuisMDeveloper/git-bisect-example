@@ -13,6 +13,21 @@
     <p>git-bisect - Use binary search to find the commit that introduced a bug</p>
     <h2>Synopsis</h2>
     <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> &lt;subcommand&gt; &lt;options&gt;</p>
+
+    <h2>Description</h2>
+    <p>The command takes various subcommands, and different options depending on the subcommand:</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect start</b> [--term-{new,bad}=&lt;term&gt; --term-{old,good}=&lt;term&gt;]
+        [--no-checkout] [--first-parent] [&lt;bad&gt; [&lt;good&gt;...]] [--] [&lt;paths&gt;...]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> (bad|new|&lt;term-new&gt;) [&lt;rev&gt;]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> (good|old|&lt;term-old&gt;) [&lt;rev&gt;...]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> terms [--term-good | --term-bad]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> skip [(&lt;rev&gt;|&lt;range&gt;)...]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> reset [&lt;commit&gt;]</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> (visualize|view)</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> replay &lt;logfile&gt;</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> log</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> run &lt;cmd&gt;...</p>
+    <p class="bg-gray-400 rounded py-2 px-4"><b>git bisect</b> help</p>
 </article>
 </body>
 </html>
