@@ -57,6 +57,8 @@
     <p class="bg-gray-400 rounded py-2 px-4">Bisecting: 337 revisions left to test after this (roughly 9 steps)</p>
     <p>Keep repeating the process: compile the tree, test it, and depending on whether it is good or bad run git bisect
         good or git bisect bad to ask for the next commit that needs testing.</p>
+    <p>Eventually there will be no more revisions left to inspect, and the command will print out a description of the
+        first bad commit. The reference refs/bisect/bad will be left pointing at that commit.</p>
 </article>
 </body>
 </html>
