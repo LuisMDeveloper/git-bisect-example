@@ -66,6 +66,10 @@
     <p>By default, this will return your tree to the commit that was checked out before git bisect start. (A new git
         bisect start will also do that, as it cleans up the old bisection state.)
     </p>
+    <p>With an optional argument, you can return to a different commit instead:</p>
+    <p class="bg-gray-400 rounded py-2 px-4">$ git bisect reset &lt;commit&gt;</p>
+    <p>For example, git bisect reset bisect/bad will check out the first bad revision, while git bisect reset HEAD will
+        leave you on the current bisection commit and avoid switching commits at all.</p>
 </article>
 </body>
 </html>
