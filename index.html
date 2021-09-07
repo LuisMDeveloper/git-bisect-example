@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"/>
 </head>
 <body>
-<article class="prose md:prose-lg mx-auto my-6">
+<article class="prose md:prose-lg mx-auto mt-6 pb-40">
     <h1>git bisect</h1>
     <h2>Name</h2>
     <p>git-bisect - Use binary search to find the commit that introduced a bug</p>
@@ -70,6 +70,8 @@
     <p class="bg-gray-400 rounded py-2 px-4">$ git bisect reset &lt;commit&gt;</p>
     <p>For example, git bisect reset bisect/bad will check out the first bad revision, while git bisect reset HEAD will
         leave you on the current bisection commit and avoid switching commits at all.</p>
+    <h2>Docs</h2>
+    <a href="https://git-scm.com/docs/git-bisect">git bisect</a>
 </article>
 </body>
 </html>
